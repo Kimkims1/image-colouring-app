@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnTakePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorAccent"
+        android:text="Tap to Take Picture"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnSavePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTakePicture"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorAccent"
+        android:text="Tap to Save Picture"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlack" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/btnSavePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <SeekBar
+        android:id="@+id/seekBarOne"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/TextViewOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/seekBarOne"
+        android:text="0.0" />
+
+    <SeekBar
+        android:id="@+id/seekBarTwo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarOne"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/TextViewTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewOne"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/seekBarTwo"
+        android:text="0.0" />
+
+    <SeekBar
+        android:id="@+id/seekBarThree"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarTwo"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/TextViewThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewTwo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/seekBarTwo"
+        android:text="0.0" />
+
+</RelativeLayout>
